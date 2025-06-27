@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>✨ Amazing To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="background-animation">
+        <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+            <div class="shape shape-4"></div>
+            <div class="shape shape-5"></div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="header">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-tasks"></i>
+                    <h1>TaskMaster</h1>
+                </div>
+                <div class="stats">
+                    <div class="stat-item">
+                        <span class="stat-number" id="totalTasks">0</span>
+                        <span class="stat-label">Total</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" id="completedTasks">0</span>
+                        <span class="stat-label">Done</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="input-section">
+            <div class="input-container">
+                <div class="input-wrapper">
+                    <i class="fas fa-plus input-icon"></i>
+                    <input 
+                        type="text" 
+                        id="taskInput" 
+                        placeholder="What needs to be done today?" 
+                        maxlength="100"
+                    />
+                    <button class="add-btn" onclick="addTask()">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </div>
+                <div class="input-counter">
+                    <span id="charCounter">0/100</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="filter-section">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">
+                    <i class="fas fa-list"></i> All
+                </button>
+                <button class="filter-btn" data-filter="pending">
+                    <i class="fas fa-clock"></i> Pending
+                </button>
+                <button class="filter-btn" data-filter="completed">
+                    <i class="fas fa-check-circle"></i> Completed
+                </button>
+            </div>
+        </div>
+
+        <div class="tasks-section">
+            <div class="tasks-header">
+                <h2>Your Tasks</h2>
+                <button class="clear-all-btn" onclick="clearAllTasks()">
+                    <i class="fas fa-trash-alt"></i> Clear All
+                </button>
+            </div>
+            <ul id="taskList" class="task-list"></ul>
+            <div class="empty-state" id="emptyState">
+                <div class="empty-icon">
+                    <i class="fas fa-clipboard-check"></i>
+                </div>
+                <h3>No tasks yet!</h3>
+                <p>Add a task above to get started</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="toast" id="toast">
+        <div class="toast-content">
+            <i class="toast-icon"></i>
+            <span class="toast-message"></span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
