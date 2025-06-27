@@ -24,5 +24,5 @@ Tasks are stored in **localStorage**, so your list stays even after you close th
 
 ---
 ![FRONTEND SCREENSHOTS](https://github.com/RPreeti12/todo-app/blob/main/to%20do%20list.png)
-![FRONTEND SCREENSHOTS](https://github.com/RPreeti12/todo-app/blob/main/to%20do%20list.png)
+![FRONTEND index page SCREENSHOTS](https://github.com/RPreeti12/todo-app/blob/main/index%20page.png)
 
