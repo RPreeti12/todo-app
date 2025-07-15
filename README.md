@@ -1,4 +1,4 @@
-## To-Do List App
+## To-Do List Web
 
 A simple and responsive To-Do List web app built using **HTML**, **CSS**, and **JavaScript**.  
 Tasks are stored in **localStorage**, so your list stays even after you close the browser!
